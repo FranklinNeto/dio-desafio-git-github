@@ -1,0 +1,55 @@
+Principais Comandos Git:
+
+1. touch "nome-do-arquivo".txt, js etc  ==> cria um novo arquivo;
+
+2. git init ==> inicializa um repositório local;
+
+3. git add "nome-do-arquivo" ==> adiciona as mudanças feitas no arquivo 
+especificado do repositório à staging area;
+
+4. git add . ==> adiciona todas as mudanças feitas no repositório à staging area;
+
+5. git commit -m "comentário sobre o commit" ==> salva as mudanças presentes na staging area;
+
+6. git log ==> faz um relatório sobre os últimos commits;
+
+7. git remote -v ==> verifica se há origens remotas;
+
+8. git remote remove origin ==> remove as origins remotas do repositório local;
+
+9. git remote add origin <link-do-repositório-remoto> ==> conecta o repositório a origem remota
+especificada;
+
+10. git branch -M main ==> muda para main o nome da branch principal;
+
+11. git push origin main ==> faz o "push" dos commits locais para a origem remota;
+
+12. git push origin <nome-da-branch> ==> faz o push da branch especificada para a origem remota;
+
+13. git checkout -b <nome-da-branch> ==> cria uma nova branch com o nome especificado e
+entra nela;
+
+14. git checkout <nome-da-branch-existente> ==> entra na branch especificada;
+
+15. git branch --all ==> lista todas as branchs locais e remotas da repositório;
+
+16. git clone <link-do-repositório-remoto> ==> clona um repositório remoto para sua máquina;
+
+17. git clone link-do-repositório-remoto> --branch <nome-da-branch> --single-branch ==> 
+clona na sua máquina apenas a branch especificada do repositório remoto;
+
+Desfazendo Alterações no Repositório Local:
+
+1. rm -rf .git ==> retira o git de um diretório que foi transformado acidentalmente 
+em repositório com o comando "git init", por exemplo;
+
+2. git restore <nome-do-arquivo> ==> restora o último estado commitado do arquivo;
+
+3. git commit --amend -m "escreva a mensagem corrigida" ==> corrige a mensagem 
+do último commit feito;
+
+4. git reset --soft <hash-do-commit> ==> retorna todos os arquivos do commit especificado 
+à staging area. OBS: use o comando "git log" para pegar a hash do commit desejado;
+
+5. git reset -- mixed <hash-do-commit> ==>
+
