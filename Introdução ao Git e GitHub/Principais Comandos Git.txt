@@ -38,30 +38,7 @@ entra nela;
 17. git clone link-do-repositório-remoto> --branch <nome-da-branch> --single-branch ==> 
 clona na sua máquina apenas a branch especificada do repositório remoto;
 
-Desfazendo Alterações no Repositório Local:
 
-1. rm -rf .git ==> retira o git de um diretório que foi transformado acidentalmente 
-em repositório com o comando "git init", por exemplo;
-
-2. git restore <nome-do-arquivo> ==> restora o último estado commitado do arquivo;
-
-3. git commit --amend -m "escreva a mensagem corrigida" ==> corrige a mensagem 
-do último commit feito;
-
-4. git reset --soft <hash-do-commit> ==> retorna todos os arquivos do commit especificado 
-à staging area. OBS: use o comando "git log" para pegar a hash do commit desejado;
-
-5. git reset --mixed <hash-do-commit> ==> retorna todos os arquivos do commit especificado 
-à antes de eles terem sido adicionados à staging area com o comando "git add";
-OBS: git reset <hash-do-commit> possui o mesmo efeito;
-
-6. git reset --hard <hash-do-commit> ==> deleta todos as mudanças (arquivos) do commit especificado;
-
-7. git reflog ==> histórico de commits mais detalhado do que o "git log";
-
-8. git reset <nome-do-arquivo> ==> retira o arquivo especificado da staging area (ou seja o 
-arquivo não pode ter sido commitado ainda). OBS: git restore --staged <nome-do-arquivo> possui 
-o mesmo efeito;
 
 
 

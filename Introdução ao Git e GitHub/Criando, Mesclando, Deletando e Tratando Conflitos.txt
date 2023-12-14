@@ -1,0 +1,30 @@
+Criando, Mesclando, Deletando e Tratando Conflitos
+
+1. git branch -v ==> lista todas as branches existentes e seus respectivos commits;
+
+2. git branch ==> lista as branches existentes no repositório local;
+
+3. git merge <nome-da-branch> ==> mescla a branch atual com a branch especificada no comando.
+OBS: após fazer o merge, deve-se deletar a branch secundária;
+
+4. git branch -d <nome-da-branch> ==> deleta a branch especificada;
+
+5. git pull ==> busca e mescla as alterações do branch remoto que está rastreando, por padrão.
+OBS: git pull ==> git fetch + git merge;
+
+6. git pull origin main ==>  busca e faz o merge das alterações do branch main no repositório 
+remoto chamado origin no seu branch local;
+
+7. git fetch ==>  busca e mescla as alterações do branch remoto que está rastreando, 
+por padrão, sem fazer o merge;
+
+8. git fetch origin main ==> busca sem fazer o merge das alterações do branch main no 
+repositório remoto chamado origin no seu branch local;
+
+9. git fetch --all ==> busca todas as alterações das branches de todos os remotos 
+configurados no seu repositório;
+
+10. git merge origin/main ==> faz o merge da branch atual com a branch origin/main,
+trazida pelo git fetch
+
+
