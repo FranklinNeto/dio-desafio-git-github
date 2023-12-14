@@ -51,5 +51,17 @@ do último commit feito;
 4. git reset --soft <hash-do-commit> ==> retorna todos os arquivos do commit especificado 
 à staging area. OBS: use o comando "git log" para pegar a hash do commit desejado;
 
-5. git reset -- mixed <hash-do-commit> ==>
+5. git reset --mixed <hash-do-commit> ==> retorna todos os arquivos do commit especificado 
+à antes de eles terem sido adicionados à staging area com o comando "git add";
+OBS: git reset <hash-do-commit> possui o mesmo efeito;
+
+6. git reset --hard <hash-do-commit> ==> deleta todos as mudanças (arquivos) do commit especificado;
+
+7. git reflog ==> histórico de commits mais detalhado do que o "git log";
+
+8. git reset <nome-do-arquivo> ==> retira o arquivo especificado da staging area (ou seja o 
+arquivo não pode ter sido commitado ainda). OBS: git restore --staged <nome-do-arquivo> possui 
+o mesmo efeito;
+
+
 
